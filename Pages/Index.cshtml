@@ -1,0 +1,157 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="root">
+            <div class="Contener-Home">
+                <div class="Explorer-Home">
+                    <div class="Title-Div">
+                       <h2>Explore</h2>
+                    </div>
+                    <div class="List-Home">
+                        <ul id="Active-Home"><samp><ion-icon name="compass-outline"></ion-icon></samp><p>Home</p></ul>
+                        <ul><samp><ion-icon name="cube-outline"></ion-icon></samp><p>Clases</p></ul>
+                        <ul><samp><ion-icon name="people-outline"></ion-icon></samp><p>Profesores</p></ul>
+                        <ul><samp><ion-icon name="person-outline"></ion-icon></samp><p>Estudiantes</p></ul>
+                    </div>
+                    <div class="Render-Div-Home">
+                        <div class="Message-Home">
+                            <h3 id="Message">DolHack <span class="multiText" ></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Contenet-Home">
+                    <div class="Search-Home">
+                        <input type="text" placeholder="Explore" >
+                    </div>
+                    <div class="Carrouser-Home">
+                        <div class="Welcome-Home-Dolhack">
+                            <div>
+                                <h2>No hay nada imposible, para una mente sostenible DolHack</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Title-Home-BestClass">
+                        <h2>Mejores Clases</h2>
+                        <a href="#">Ver Todas</a>
+                    </div>
+                    <!-- Clases populares -->
+                    <div class="BestClass-Home-Render">
+                        <div class="BestClass-Home-Card" style="background-image: url('https://i.blogs.es/a1f869/dell1/1366_2000.jpeg');">
+                            <div class="BestClass-Home-PhotoCard">
+                                <img src="https://orientacion.universia.edu.pe/imgs2011/imagenes/1k---2020--2020_08_30_181509@2x.315.jpg">
+                            </div>
+                            <div class="BestClass-Home-Info">
+                                <h3>Creacion de videojuegos</h3>
+                                <p>¿Quieres crear tu primer juego multiplataforma?, que esperas!?, unete a con nosotros donde aprenderemos a usar todas las herramientas para programar videojuegos.</p>
+                                <div>
+                                    <h5>python</h5>
+                                    <h5>256 Estudiantes</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BestClass-Home-Card" style="background-image: url('https://controlpublicidad.com/uploads/2023/03/inteligencia-artificial-e-imaginacion-102327.jpg');">
+                            <div class="BestClass-Home-PhotoCard">
+                                <img src="https://i.pinimg.com/originals/28/7e/1b/287e1ba225f8d19d31fa5b36578a6387.jpg">
+                            </div>
+                            <div class="BestClass-Home-Info">
+                                <h3>Inteligencia artificial</h3>
+                                <p>Interesado en la programación con redes neuronales o las IA, pues esta clase es para ti, aprenderas todo eso y mas.</p>
+                                <div>
+                                    <h5>python</h5>
+                                    <h5>256 Estudiantes</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="Title-Home-BestClass">
+                        <h2>Mejores Profesores</h2>
+                        <a href="#">Ver Todas</a>
+                    </div>
+                    <div class="BestClass-Home-Render">
+                        <div class="BestClass-Teacher-Home-Card" style="background-image: url('https://johancruyffinstitute.com/wp-content/uploads/2019/07/header-perfiles-profesionales-del-futbol.jpg');">
+                            <div class="BestTeacher-Home-Photo">
+                                <img src="https://i.blogs.es/66b2a4/photo-1511367461989-f85a21fda167/1366_2000.jpeg">
+                            </div>
+                            <div class="BestTeacher-Home-Info">
+                                <h3>Jhon Petter</h3>
+                                <p>Soy Jhon Petter profesor de desarrollo nativo, e trabajado en muchas empresas con una experencia laboral.</p>
+                                <h4>13 clases</h4>
+                            </div>
+                        </div>
+                        <div class="BestClass-Teacher-Home-Card" style="background-image: url('https://img.freepik.com/fotos-premium/metaverso-avatar-digital-metaverso-presencia-tecnologia-digital-mundo-cibernetico-realidad-virtual_72482-3626.jpg');">
+                            <div class="BestTeacher-Home-Photo">
+                                <img src="https://4.bp.blogspot.com/-5qoiqxihtDE/UwthNQabj0I/AAAAAAAAVAo/JlA5QLcpBMs/s1600/abu.jpg">
+                            </div>
+                            <div class="BestTeacher-Home-Info">
+                                <h3>Pedro Garcia</h3>
+                                <p>Me expecialisto en el desarrollo web, React, Next, Angular son solo unas pequeñas herramientas que conozco</p>
+                                <h4>6 clases</h4>
+                            </div>
+                        </div>
+                        <div class="BestClass-Teacher-Home-Card" style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7262e511-edc8-404c-91af-b68774145531/dd2y71a-1de53bcf-1429-483c-92c7-8ddf406e256b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcyNjJlNTExLWVkYzgtNDA0Yy05MWFmLWI2ODc3NDE0NTUzMVwvZGQyeTcxYS0xZGU1M2JjZi0xNDI5LTQ4M2MtOTJjNy04ZGRmNDA2ZTI1NmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.61ld4Pw6ly6p2rw21ZrLxthFcaVvO2jzB-mzMHAy3c8');">
+                            <div class="BestTeacher-Home-Photo">
+                                <img src="https://cdn.discordapp.com/attachments/1088540207818735677/1133902167841976383/FB_IMG_1690413615764.jpg">
+                            </div>
+                            <div class="BestTeacher-Home-Info">
+                                <h3>Brayan Danilo Martinez</h3>
+                                <p>Jugador profecional del Hollow Knight.</p>
+                                <h4>0 clases</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Profile-Home">
+                    <div class="Settings-Home">
+                        <ul>
+                            <samp><ion-icon name="chatbubbles-outline"></ion-icon></samp>
+                        </ul>
+                        <ul>
+                            <samp><ion-icon name="mail-unread-outline"></ion-icon></samp>
+                        </ul>
+                        <ul>
+                            <samp><ion-icon name="settings-outline"></ion-icon></samp>
+                        </ul>
+                    </div>
+                    <div class="Photo-Home">
+                        <div class="Photo-Home-Shape1">
+
+                        </div>
+                        <div class="Photo-Home-Shape2">
+
+                        </div>
+                        <div class="Photo-Home-Render">
+                            <img src="https://www.soycanon.com/filemanager/userfiles/2018/03marzo/linkedin/shutterstock_249063865.jpg" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="Profile-Data-Div">
+                        <h2>Seraphina</h2>
+                        <p>seraphina@gmail.com</p>
+                    </div>
+                    <div class="Home-Profile-Profesor">
+                        <p>Tus Profesores</p>
+                        <a href="#">Ver Todo</a>
+                    </div>
+                    <div class="Home-Profile-teachers">
+                        <ul><div class="Home-Photo-Teachers"><img src="https://encuentra.com/wp-content/uploads/2022/06/Valoresparaprofesores-encuentra.com_.jpg"></div><p>Isabella Vega</p></ul>
+                        <ul><div class="Home-Photo-Teachers"><img src="https://img.freepik.com/fotos-premium/joven-maestro-pie-libro_488220-18480.jpg?w=360"></div><p>Lucas Mendez</p></ul>
+                        <ul><div class="Home-Photo-Teachers"><img src="https://st.depositphotos.com/1011643/2892/i/600/depositphotos_28926109-stock-photo-primary-teacher-helping-student-in.jpg"></div><p>Mateo Sánchez</p></ul>
+                         
+                    </div>
+                    <div class="Home-Profile-Profesor">
+                        <p>Tus Clases</p>
+                        <a href="#">Ver Todo</a>
+                    </div>
+                    <div id="List-Profile-Class" class="Home-Profile-teachers">
+                        <ul style="background-image: url('https://p4.wallpaperbetter.com/wallpaper/637/317/264/simple-java-programming-code-wallpaper-preview.jpg');" ><p>Java en el Backend</p></ul>
+                        <ul style="background-image: url('https://cdn.wallpapersafari.com/74/85/PEvcXa.jpeg');"><p>PHP frontend</p></ul>
+                        <ul style="background-image: url('https://c4.wallpaperflare.com/wallpaper/645/96/47/python-programming-programming-programming-language-code-hd-wallpaper-preview.jpg');"><p>Python Ciencias de datos</p></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
